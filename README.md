@@ -27,8 +27,8 @@
 ###Webpack Config - [Setting configuration options](https://webpack.github.io/docs/configuration.html)
 1. context: the path to your client-side JS folder. MUST be an absolute path. The base directory for resolving the 'entry' option
 2. entry: this is the entry point to your application.
-..* If passed a **string**: the string is resolved to a module which is loaded upon startup
-..* If passed an **array**: All modules are loaded upon startup. The last one is exported
+⋅⋅* If passed a **string**: the string is resolved to a module which is loaded upon startup
+⋅⋅* If passed an **array**: All modules are loaded upon startup. The last one is exported
 3. module.loaders: this section specifies how each file should be processed before it is combined into your bundle. The only loader that we currently have is Babel.
 4. resolveLoader: where webpack will look for loaders - such as Babel
 5. resolve: where webpack should look for files referenced be an `import` or `require()` statement. This allows you to import npm packages in your code.

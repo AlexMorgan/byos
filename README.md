@@ -32,3 +32,5 @@
 3. module.loaders: this section specifies how each file should be processed before it is combined into your bundle. The only loader that we currently have is Babel.
 4. resolveLoader: where webpack will look for loaders - such as Babel
 5. resolve: where webpack should look for files referenced be an `import` or `require()` statement. This allows you to import npm packages in your code.
+
+Note: `babel-loader` is a Webpack "loader". It supports running Babel from Webpack. Typically any npm package ending in '-loader' if for Webpack

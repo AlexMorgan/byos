@@ -1,4 +1,4 @@
-#[Build Your Own Starter](https://github.com/ahfarmer/minimal-react-starter)
+#Build Your Own Starter
 
 ##NPM
 `npm init [-f|--force|-y|--yes]` - creates a package.json file | If invoked with flags it will only used defaults and not prompt you for any options
@@ -66,4 +66,5 @@ Installing React package:
 
 
 ####Source:
-- http://andrewhfarmer.com/build-your-own-starter/#8-done
+- Tutorial: http://andrewhfarmer.com/build-your-own-starter/#8-done
+- Github Repo: https://github.com/ahfarmer/minimal-react-starter

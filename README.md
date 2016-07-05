@@ -1,4 +1,4 @@
-#Build Your Own Starter
+[#Build Your Own Starter](https://github.com/ahfarmer/minimal-react-starter)
 
 ##NPM
 `npm init [-f|--force|-y|--yes]` - creates a package.json file | If invoked with flags it will only used defaults and not prompt you for any options
@@ -12,6 +12,7 @@
     - [JSX](https://facebook.github.io/jsx/) is a JavaScript syntax extension that looks similar to XML. You can use a simple JSX syntactic transform with React. It's intended to be used by various preprocessors (transpilers) to transform these tokens into standard ECMAScript.
 
     Install Babel
+
     ```
     npm install --save babel-core
     npm install --save babel-preset-es2015
@@ -34,3 +35,35 @@
 5. resolve: where webpack should look for files referenced be an `import` or `require()` statement. This allows you to import npm packages in your code.
 
 Note: `babel-loader` is a Webpack "loader". It supports running Babel from Webpack. Typically any npm package ending in '-loader' if for Webpack
+
+##Compile
+Adding an [npm script](https://docs.npmjs.com/misc/scripts) called `compile` will handle the scripts property of the package.josn
+
+```
+npm run compile
+```
+
+Running the line of code above creates a file called www/bundle.js. Here you will see your main.js 'Hello World' code as well as a lot of Webpack boilerplate. It's not typical to run `npm run compile` very often, this is just used as an example to be familiar with what Webpack does. After you're done with this step, remove the wwww/bundle.js file - We don't need it in the future.
+
+
+##Express
+A React  development environment needs to be able to show your app in a browser. We'll be using Express as our server to achieve this. We'll add a server.js file, that will run an Express server, which runs Webpack. Anytime you make a change to a .js file Webpack will rerun. The index.html file that we create in this step ill act as our first webpage. Express is configured to serve all files in the /www folder.
+
+###server.js
+server.js is server-side Javascript. WE can run it with the following command:
+
+`node server.js`
+
+We'll also be adding a 'start' script (in our package.json file) to run the server in this step:
+
+`npm start`
+
+Note: npm will default the 'start' command to node server.js if there is a server.js file in the root of your package.
+
+##React
+Installing React package:
+`npm install --save react react-dom`
+
+
+####Source:
+- http://andrewhfarmer.com/build-your-own-starter/#8-done
